@@ -1,15 +1,14 @@
 package store_system.com.example.store_management_system.entity;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 @Entity
 @Data
 @Builder
 @Table(name = "categories")
-@RequiredArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

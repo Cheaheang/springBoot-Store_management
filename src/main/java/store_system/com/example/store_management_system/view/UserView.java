@@ -2,6 +2,7 @@ package store_system.com.example.store_management_system.view;
 
 import lombok.Builder;
 import lombok.Data;
+import store_system.com.example.store_management_system.entity.User;
 import store_system.com.example.store_management_system.service.UserService;
 
 @Data
@@ -12,11 +13,11 @@ public class UserView {
     private String status;
     private String password;
 
-    public static UserView of(UserView userView) {
+    public static UserView of(User user) {
         return UserView.builder()
-                .name(userView.getName())
-                .password(userView.getPassword())
-                .role(userView.getRole())
-                .status(userView.getStatus()).build();
+                .name(user.getName())
+                .password(user.getPassword())
+                .role(user.getRole())
+                .status(user.getStatus()).build();
     }
 }
