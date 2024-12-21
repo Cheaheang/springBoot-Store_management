@@ -8,6 +8,11 @@ class StoreManagementSystemApplicationTests {
 
 	@Test
 	void contextLoads() {
+
+	}
+	@Test
+	void userFormTest(){
+
 	}
 
 }

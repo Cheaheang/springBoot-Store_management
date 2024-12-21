@@ -1,12 +1,14 @@
 package store_system.com.example.store_management_system.form;
 
 import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import store_system.com.example.store_management_system.entity.User;
 @Data
-@RequiredArgsConstructor
+@AllArgsConstructor
+//@RequiredArgsConstructor
 public class CreateUserForm {
     @NotBlank
     private String name;
