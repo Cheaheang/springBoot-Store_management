@@ -2,6 +2,7 @@ package store_system.com.example.store_management_system.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.lang.Nullable;
 
 @Entity
 @Data
@@ -16,6 +17,8 @@ public class Category {
     private String name;
     private String createAt;
     private String createBy;
+    @Nullable
     private String updateAt;
+    @Nullable
     private String updateBy;
 }
